@@ -16,6 +16,8 @@ var/
 .installed.cfg
 *.egg
 
+.DS_Store
+
 # Serverless directories
 .serverless
 node_modules/
