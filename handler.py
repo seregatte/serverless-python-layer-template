@@ -2,14 +2,13 @@
 
 import certbot.main as certhandle
 
+CERTBOT_DIR = "/tmp/certbot"
+
 def hello(event, context):
     certbot_args = [
-        # Override directory paths so script doesn't have to be run as root
         '--config-dir', CERTBOT_DIR,
         '--work-dir', CERTBOT_DIR,
         '--logs-dir', CERTBOT_DIR,
-
-        # Obtain a cert but don't install it
         'certificates'
         
     ]
